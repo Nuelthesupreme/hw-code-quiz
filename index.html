@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div id="quizContainer" class="container">
+        <div class ="title">Quiz time</div>
+
+        <div id="question" class="question"></div>
+
+        <label class="option"><input onClick="answerQuestion(0)" type="radio" name="option" value="1"/><span id="opt1"></span></label>
+        <label class="option"><input onClick="answerQuestion(1)" type="radio" name="option" value="2"/><span id="opt2"></span></label>
+        <label class="option"><input onClick="answerQuestion(2)" type="radio" name="option" value="3"/><span id="opt3"></span></label>
+        <label class="option"><input onClick="answerQuestion(3)" type="radio" name="option" value="3"/><span id="opt4"></span></label>
+        <!-- <button id="nextButton" class="nxt-btn" onclick="nextQuestion()">Next Question</button> -->
+    </div>
+    <div id="result" class="container result" style="display:none;"></div>
+    <script src="_main.js"></script>
+    <script> src="question.js"</script>
+</body>
+</html>
